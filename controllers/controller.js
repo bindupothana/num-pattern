@@ -16,4 +16,5 @@ app.controller('pyramidCtrl', function ($scope) {
     }
 }
     $scope.pyramid();
+    console.log(j)
 });
