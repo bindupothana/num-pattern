@@ -1,21 +1,22 @@
-<!DOCTYPE html>
-<html>
+
+   <!DOCTYPE html>
+<html ng-app="pyramidApp">
 <head>
-	<title></title>
-	<script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
-</script>
+	<title>palindrome</title>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.6.1/angular.js"></script>
+    <script src="controllers/controller.js"></script>
 
 </head>
 <body>
-<div ng-app="pyramidApp" ng-controller="pyramidCtrl">
-<div>Enter no. : <input type="number" ng-model="num" >
-<br/>
-{{j}}
-</div>
+<div ng-controller="pyramidCtrl">
+<h3><br>AngularJs pyramid </h3></br>
+<input type="number" ng-model="num" />
+<button class="btn-primary" type="submit"  ng-click="pyramid(num)">click</button>
+<div ng-repeat=" output in result track by $index">
 
-</div>
-	
-<script src="controllers/controller.js">
-</script>
+{{output}}       </div>
+<!--<br/><h4/>{{ num }} -->
+
+
 </body>
 </html>
